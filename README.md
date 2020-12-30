@@ -16,6 +16,7 @@ Incomplete Parts:
 
 Known Bugs:
   Holding Mouse1 for too long will trigger on the next scene causing misclick
+  Game only saves on Quit Game (Returning to Main Menu and loading game will load previous save only)
 
 Known Exploits:
   Returning to Main Menu during a level and loading the save resets the level and the supplies lost (probably unfixable as fix would lead to bug)
