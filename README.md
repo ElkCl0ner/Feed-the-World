@@ -10,6 +10,7 @@ Incomplete Parts:
   Balancing
   Position of minesweeper for all levels
   Sound/Music
+  More events (?)
   Credits
   Testing
 
