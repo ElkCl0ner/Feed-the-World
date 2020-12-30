@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://ressources/lose.jpg" type="Texture" id=1]
+[ext_resource path="res://End/Sprite.gd" type="Script" id=2]
+[ext_resource path="res://ressources/EathomaSansFont.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://ressources/crate.jpg" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 3 )
+
+[node name="End2" type="Node2D"]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 800, 384 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Supplies" type="RichTextLabel" parent="Sprite"]
+margin_left = -80.0
+margin_top = -72.0
+margin_right = 16.0
+margin_bottom = 8.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Supplies Sprite" type="Sprite" parent="Sprite"]
+position = Vector2( 56, -32 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="Return to Main Menu" type="Button" parent="."]
+margin_left = 504.0
+margin_top = 448.0
+margin_right = 1092.0
+margin_bottom = 550.0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://ressources/EathomaSansFont.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://ressources/vvvv.jpg" type="Texture" id=2]
+[ext_resource path="res://ressources/yes.jpg" type="Texture" id=3]
+[ext_resource path="res://ressources/no.jpg" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+outline_size = 1
+font_data = ExtResource( 1 )
+
+[node name="New Game" type="Node2D"]
+
+[node name="Warning" type="Sprite" parent="."]
+position = Vector2( 800, 384 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="Warming Msg" type="RichTextLabel" parent="Warning"]
+margin_left = -336.0
+margin_top = -176.0
+margin_right = 368.0
+margin_bottom = 176.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Lauching a new game will override any saved game. Do you wish to continue?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Yes" type="Button" parent="."]
+margin_left = 504.0
+margin_top = 576.0
+margin_right = 772.0
+margin_bottom = 646.0
+icon = ExtResource( 3 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="No" type="Button" parent="."]
+margin_left = 832.0
+margin_top = 576.0
+margin_right = 1100.0
+margin_bottom = 646.0
+icon = ExtResource( 4 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
